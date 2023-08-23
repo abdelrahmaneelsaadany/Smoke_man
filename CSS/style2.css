@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Open+Sans:wght@400;700&family=Oswald:wght@200;400;700&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400&family=Ubuntu:ital@1&family=Work+Sans:wght@200;300;400;600;700;800&display=swap');
+
+/* Start Var */
+:root{
+    --back-ground:#000;
+    --main-color:#222;
+    --second-Color:#616161;
+}
+/* End Var */
+/* Start Component */
+.line{
+    background-color: white;
+    border: 1px solid white;
+    width: 250px;
+}
+/* End Component */
+body{
+    background-color: var(--back-ground);
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+/* Start Nav */
+.navbar{ 
+    background-color: var(--main-color);
+}
+.navbar .navbar-brand img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    max-width: 100%;
+    opacity: 0.5;
+}
+.navbar .navbar-toggler svg{
+    border: none !important;
+    outline: none !important;
+}
+.navbar .navbar-nav .nav-link{
+    transition: all 0.5s ease;
+}
+.navbar .navbar-nav .nav-link:hover{
+    background-color: var(--second-Color);
+}
+/* End Nav */
+.home{
+    min-height: calc( 100vh - 126px);
+}
+/* Start Skills */
+.skills .skills-info .one .progress{
+    height: 30px;
+    border-radius: 0 !important;
+}
+.skills .skills-info .two .progress{
+    height: 30px;
+    border-radius: 0 !important;
+}
+.skills .skills-info .three .progress{
+    height: 30px;
+    border-radius: 0 !important;
+}
+.skills .skills-info .one .progress-bar,
+.skills .skills-info .two .progress-bar,
+.skills .skills-info .three .progress-bar{
+    background-color: var(--second-Color);
+}
+/* End Skills */
+/* Start My price */
+.my-price .card {
+    opacity: 0.6;
+    transition: all ease 0.5s;
+}
+.my-price .card:hover{
+    opacity: 1;
+}
+.my-price .card .card-header{
+    background-color: var(--second-Color);
+}
+.my-price .card ul li:last-child{
+    background-color: #f1f1f1;
+}
+.my-price .card a{
+    background-color: #fff;
+    width: fit-content;
+    margin: 0 auto;
+    transition: all ease 0.5s;
+    color: var(--back-ground);
+}
+.my-price .card a:hover{
+    background-color: #000;
+    color: white;
+}
+/* End My price */
+/* Start Photos */
+.photos .box-image img:hover{
+    transition: all 0.7s ease;
+    opacity: 0.5;
+}
+/* End Photos */
+/* Start Contact */
+.contact .contact-inputs a{
+    color: var(--back-ground);
+    background-color: white;
+    padding: 10px 15px;
+    width: fit-content;
+    transition: all 0.5s ease;
+    border: none;
+    outline: none   ;
+}
+.contact .contact-inputs input:focus{
+    border: none;
+    outline: none;
+}
+.contact .contact-inputs a:hover{
+    background-color: var(--back-ground);
+    color: white;
+}
+/* ُEnd Contact */
+/* Start Footer */
+.footer .social-icons .social a svg{
+    color: white;
+    font-size: 2em;
+    transition: all ease 0.5s;
+}
+.footer .social-icons .social a svg:hover{
+    opacity: 0.6;
+}
+/* End Footer */
